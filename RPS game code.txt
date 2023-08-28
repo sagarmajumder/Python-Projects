@@ -1,0 +1,26 @@
+import random
+
+list = ("Rock", "Paper", "Scissor" )
+
+user_action = input("Choice [Rock, Paper, Scissor]:")
+  
+computer_action = random.choice(list)
+
+if user_action == ("Rock") and computer_action == ("Paper"):
+    print("Computer choice Paper.")
+    print("Computer Wins!, You Lose!")
+elif user_action == ("Scissor") and computer_action == ("Rock"):
+    print("Computer choice Rock.")
+    print("Computer Wins!, You Lose!")
+elif user_action == ("Paper") and computer_action == ("Scissor"):
+    print("Computer choice Scissor.")
+    print ("Computer Wins!, You Lose!")
+elif user_action == computer_action:
+    print("Both's choice are same.")
+    print("It's tie!")
+else:
+    
+    print("You Win!")
+    
+
+    
